@@ -19,7 +19,6 @@ export default function Join({ onJoin }: { onJoin: (name: string) => void }) {
       localStorage.setItem("username", username);
       onJoin(username);
     } catch (err: any) {
-      // 2. Capture the "Username already taken" message here
       setError(err.message);
     }
   };
