@@ -1,15 +1,14 @@
-import prisma from "../db";
+import prisma from "../db.js";
 export const joinGame = async (req: any, res: any) => {
   const { username } = req.body;
   try {
-    // Check if username already exists
     const existingUser = await prisma.score.findFirst({
       where: { name: username },
     });
     if (existingUser) {
       return res.status(400).json({ error: "Username already taken" });
     }
-    // Create a new score entry for the user
+
     const score = await prisma.score.create({
       data: { name: username, time: 0 },
     });

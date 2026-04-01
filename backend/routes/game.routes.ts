@@ -2,7 +2,7 @@ import {
   joinGame,
   submitScore,
   leaderboard,
-} from "../controllers/gameController";
+} from "../controllers/gameController.js";
 
 export default function registerGameRoutes(app: any) {
   app.post("/api/join", joinGame);
