@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import prisma from "./db";
-import registerGameRoutes from "./routes/game.routes";
+import prisma from "./db.js";
+import registerGameRoutes from "./routes/game.routes.js";
 
 const app = express();
 
