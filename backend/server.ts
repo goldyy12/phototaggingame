@@ -25,5 +25,4 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-// Vercel needs the app exported to wrap it in a serverless function
 export default app;
