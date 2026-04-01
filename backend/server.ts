@@ -10,10 +10,9 @@ app.use(express.json());
 
 registerGameRoutes(app);
 
-app.get("/api/characters", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
-    const characters = await prisma.character.findMany();
-    res.json(characters);
+    res.json("hello world");
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch characters" });
   }
