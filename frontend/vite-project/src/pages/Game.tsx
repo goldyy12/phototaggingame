@@ -160,7 +160,6 @@ export default function Game({ username }: { username: string }) {
         </div>
       )}
 
-      {/* MENU */}
       {showMenu && menuPos && !finished && (
         <div
           className="menu"
@@ -181,7 +180,6 @@ export default function Game({ username }: { username: string }) {
         </div>
       )}
 
-      {/* FINISH SCREEN */}
       {finished && (
         <div className="overlay">
           <div className="finish-screen">
