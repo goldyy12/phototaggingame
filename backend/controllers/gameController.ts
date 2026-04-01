@@ -1,6 +1,7 @@
 import prisma from "../db.js";
 export const joinGame = async (req: any, res: any) => {
   const { username } = req.body;
+  console.log("DB URL:", process.env.DATABASE_URL);
   try {
     const existingUser = await prisma.score.findFirst({
       where: { name: username },
