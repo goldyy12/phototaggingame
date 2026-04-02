@@ -72,7 +72,7 @@ export default function Game({ username }: { username: string }) {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [finished]);
+  }, [finished, logout, showGameInfo]);
   const handleSelect = async (name: string) => {
     if (!menuPos) return;
 
