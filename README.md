@@ -39,7 +39,7 @@ A fun browser-based game where players search for hidden objects in an image as 
 
 ### Database
 
-* (Your DB here – e.g. PostgreSQL / MongoDB / Supabase)
+* (Your DB here – e.g. PostgreSQL /  Supabase)
 
 ---
 
@@ -48,7 +48,7 @@ A fun browser-based game where players search for hidden objects in an image as 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/goldyy12/phototaggingame
 cd your-repo
 ```
 
@@ -132,20 +132,8 @@ GET /leaderboard
 
 ---
 
-## ⚠️ Known Issues
-
-* Timer synchronization bug (fixed using `useRef`)
-* Potential double submissions (can be improved)
 
 ---
-
-## 🔮 Future Improvements
-
-* 🎵 Sound effects
-* 📱 Mobile optimization
-* 🌍 Multiplayer mode
-* 🎨 Better UI/UX animations
-* 🔐 Authentication system
 
 ---
 
