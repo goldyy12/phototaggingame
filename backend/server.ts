@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://phototaggingame-s55x.vercel.app", // The origin from your error
-      "https://phototaggingame.vercel.app", // Your main frontend domain
+      "https://phototaggingame-s55x.vercel.app",
+      "https://phototaggingame.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],

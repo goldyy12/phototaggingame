@@ -65,7 +65,7 @@ export default function Game({ username }: { username: string }) {
   useEffect(() => {
     if (finished) return;
     if (logout) return;
-    if (!showGameInfo) return;
+    if (showGameInfo) return;
 
     const interval = setInterval(() => {
       setTimer((prev) => prev + 1);
