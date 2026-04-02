@@ -2,6 +2,8 @@
 
 A fun browser-based game where players search for hidden objects in an image as fast as possible. Your time is tracked, and once you find all objects, your score is saved to a leaderboard.
 
+https://phototaggingame-s55x.vercel.app/Live Link
+
 ---
 
 ## 🚀 Features
