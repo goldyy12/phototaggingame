@@ -23,13 +23,25 @@ export const joinGame = async (req: any, res: any) => {
 export const submitScore = async (req: any, res: any) => {
   const { username, time } = req.body;
   try {
-    const score = await prisma.score.create({
-      data: {
-        name: username,
-        time,
-      },
+    const existingScore = await prisma.score.findFirst({
+      where: { name: username },
     });
-    res.json(score);
+
+    if (existingScore) {
+      if (time < existingScore.time || existingScore.time === 0) {
+        const updated = await prisma.score.update({
+          where: { id: existingScore.id },
+          data: { time: time },
+        });
+        return res.json(updated);
+      }
+      return res.json(existingScore);
+    }
+
+    const newScore = await prisma.score.create({
+      data: { name: username, time },
+    });
+    res.json(newScore);
   } catch (error) {
     console.error("Error submitting score:", error);
     res.status(500).json({ error: "Failed to submit score" });

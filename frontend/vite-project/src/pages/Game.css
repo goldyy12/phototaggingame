@@ -220,3 +220,44 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+/* ALL ACTION BUTTONS */
+.start-button,
+.finish-screen button {
+  background: #00ff88; /* Modern Neon Green */
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5px;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.start-button:hover,
+.finish-screen button:hover {
+  background: #05e67c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+.start-button:active,
+.finish-screen button:active {
+  transform: translateY(0);
+}
+
+/* Specific Logout Button style (Optional: Make it Red) */
+.finish-screen button:last-of-type {
+  background: #ff4757;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+.finish-screen button:last-of-type:hover {
+  background: #ff6b81;
+  box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+}

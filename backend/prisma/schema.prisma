@@ -21,7 +21,7 @@ model Character {
 
 model Score {
   id        Int      @id @default(autoincrement())
-  name      String
+  name      String   @unique
   time      Int      
   createdAt DateTime @default(now())
 }
